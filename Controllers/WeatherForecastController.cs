@@ -21,7 +21,7 @@ namespace bskproject.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-            return Enumerable.Range(0, 10).Select(index => new WeatherForecast
+            return Enumerable.Range(0, 50).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                 TemperatureC = Random.Shared.Next(-20, 55),
