@@ -11,6 +11,7 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { FetchPostComponent } from './fetch-post/fetch-post.component';
 import {LoginComponent }  from './login/login.component';
+import { CRUDComponent } from './crud/crud.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {LoginComponent }  from './login/login.component';
     CounterComponent,
     FetchDataComponent,
     FetchPostComponent,
-    LoginComponent
+    LoginComponent,
+    CRUDComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -32,6 +34,7 @@ import {LoginComponent }  from './login/login.component';
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'fetch-post', component: FetchPostComponent },
       { path: 'login', component: LoginComponent },
+      { path: 'crud', component: CRUDComponent }
     ])
   ],
   providers: [],
