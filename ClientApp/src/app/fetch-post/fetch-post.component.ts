@@ -20,7 +20,7 @@ export class FetchPostComponent {
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
     let posts = 'https://jsonplaceholder.typicode.com/posts/';
-    http.get(posts).subscribe((data:any) => {
+    http.get(posts).subscribe((data: any) => {
       console.log(data);
       this.getJsonValues = data;
     }, (error: any) => console.error(error));

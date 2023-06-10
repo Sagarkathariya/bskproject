@@ -1,4 +1,5 @@
 using bskproject.Controllers;
+using bskproject.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
